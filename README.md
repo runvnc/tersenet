@@ -1,4 +1,4 @@
-#NoScriptWeb
+# NoScriptWeb
 
 For some context, read  [Adblocking, How about Nah?](https://www.eff.org/deeplinks/2019/07/adblocking-how-about-nah)
 
