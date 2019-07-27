@@ -10,7 +10,7 @@ This software is written in the [Nim](https://nim-lang.org) programming language
 
 It is impossible for ads from the traditional web to display in NoScriptWeb, or for companies to track you -- because no content or links from the traditional web can be displayed by NoScriptWeb browsers.
 
-This web browser is a relatively simple system, rather than an entire operating system-in-a-box like Chrome or Firefox. It is supported by decentralized (mostly p2p) protocols.
+This web browser is a relatively simple system, rather than an entire operating system-in-a-box like Chrome or Firefox. It is supported by decentralized protocols.
  
  ## Markdown subset
  
