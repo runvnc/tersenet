@@ -18,7 +18,7 @@ NoScriptWeb Markdown supports the following features: headings (with `#`), escap
  
  ## Attachments
  
-All non-markdown content (except for one small image) are loaded *only* upon demand by the user.
+All non-markdown content (except for one small image) is loaded *only* upon demand by the user.
  
 Media and applications can be attached to pages, but have restrictions.  No more than 10KB of images will be loaded by default.
 
