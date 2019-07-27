@@ -16,7 +16,7 @@ NoScriptWeb Markdown supports the following features: headings (with `#`), escap
  
  ## Attachments
  
- All non-markdown content (except for one small image) are loaded only upon demand by the user.
+All non-markdown content (except for one small image) are loaded *only* upon demand by the user.
  
 Media and applications can be attached to pages, but have restrictions.  No more than 10KB of images will be loaded by default.
 
@@ -24,13 +24,15 @@ Other than that small image, media must be launched explicitly from the Media ta
 
 ### Media attachments
 
+Pages may attach images or videos.  Their descriptions appear on the Media Tab.  Users must switch tabs and click the individual media item before any loading or processing is done.  Images and media may not be loaded from traditional web sources outside of NoScriptWeb approved protocols.
 
 ### Application attachments
 
-or example only displaying or loading media and applications when the user switches to that tab and launches them.
 
 Attached applications could be web assembly with I/O abilities such as a simple canvas-like UI.
 
 If you can find or create a suitable and high performance p2p system (or group of systems) for enabling people to load and publish these lightweight links, you could provide a useful and viable alternative to the traditional web that would be approachable by small development teams.
 
-Built in p2p search could be a killer feature for such a system.
+## P2P Search
+
+All markdown content is automatically added to a full-text search system.  This search capability is powered by the peers in the network.
