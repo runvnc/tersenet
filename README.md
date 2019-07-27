@@ -14,7 +14,7 @@ This web browser is a relatively simple system, rather than an entire operating 
  
  ## Markdown subset
  
-NoScriptWeb Markdown supports the following features: headings (with `#`), escape with backtick, bold, italics, and links (only to other NoScriptWeb pages, e.g. nsw://reports.frontline/aug2019austin).
+NoScriptWeb Markdown supports the following features: headings (with `#`), escape with backtick, bold, italics, bullets, and links (only to other NoScriptWeb pages, e.g. nsw://reports.frontline/aug2019austin).
  
  ## Attachments
  
@@ -26,14 +26,17 @@ Other than that small image, media must be launched explicitly from the Media ta
 
 ### Media attachments
 
-Pages may attach images or videos.  Their descriptions appear on the Media Tab.  Users must switch tabs and click the individual media item before any loading or processing is done.  Images and media may not be loaded from traditional web sources outside of NoScriptWeb approved protocols.
+Pages may attach images or videos.  Their descriptions appear on the Media Tab.  Users must switch tabs and click the individual media item before any loading or processing is done.  Images and media may not be loaded from traditional web sources outside of NoScriptWeb  protocols.
 
 ### Application attachments
 
+Attached applications are written in web assembly with some basic I/O abilities which include:
 
-Attached applications could be web assembly with I/O abilities such as a simple canvas-like UI.
+* A [simple UI API](https://github.com/simple2d/simple2d)
 
-If you can find or create a suitable and high performance p2p system (or group of systems) for enabling people to load and publish these lightweight links, you could provide a useful and viable alternative to the traditional web that would be approachable by small development teams.
+* A communications API that connects applications with NoScriptWeb's p2p backbone
+
+* Carefully controlled payment prompts that integrate popular cryptocurrencies.  Available cryptocurrencies currently include: Bitcoin, Ethereum, and Bitcoin Cash.
 
 ## P2P Search
 
