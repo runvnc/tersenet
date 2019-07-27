@@ -30,7 +30,7 @@ Pages may attach images or videos.  Their descriptions appear on the Media Tab. 
 
 ### Application attachments
 
-Applications may be attached to pages.  They appear on the Applications tab and are not loaded unless explicitly launched by the user.
+Applications may be attached to pages.  They appear on the Applications tab and are not downloaded or executed unless explicitly launched by the user.
 
 Attached applications are written in web assembly with some basic I/O abilities which include:
 
