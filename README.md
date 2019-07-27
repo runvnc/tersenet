@@ -14,7 +14,7 @@ This web browser is a relatively simple system, rather than an entire operating 
  
 NoScriptWeb Markdown supports the following features: headings (with `#`), escape with backtick, bold, italics, and links (only to other NoScriptWeb pages, e.g. nsw://reports.frontline/aug2019austin).
  
- ## Attachements
+ ## Attachments
  
  All non-markdown content (except for one small image) are loaded only upon demand by the user.
  
