@@ -2,7 +2,7 @@
 
 For some context, read  [Adblocking, How about Nah?](https://www.eff.org/deeplinks/2019/07/adblocking-how-about-nah)
 
-NoScriptWeb is a new type of lightweight, high-performance web browser that is *100% JavaScript free*. Pages are encoded in an encrypted, size-limited subset of markdown distributed in a content-oriented (rather than server-centric) fashion. They load almost instantly from network peers.
+NoScriptWeb is a new type of lightweight, high-performance web browser that is *100% JavaScript free*. Pages are encoded in an encrypted, size-limited subset of restructed text (rst) distributed in a content-oriented (rather than server-centric) fashion. They load almost instantly from network peers.
 
 This software is written in the [Nim](https://nim-lang.org) programming language.
 
@@ -14,7 +14,7 @@ It is impossible for ads from the traditional web to display in NoScriptWeb, or 
 
 This web browser is a relatively simple system, rather than an entire operating system-in-a-box like Chrome or Firefox. It is supported by decentralized protocols.
  
- ## Markdown subset
+ ## rst subset
  
 NoScriptWeb Markdown supports the following features: headings (with `#`), escape with backtick, bold, italics, bullets, and links (only to other NoScriptWeb pages, e.g. nsw://reports.frontline/aug2019austin).
  
