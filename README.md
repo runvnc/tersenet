@@ -6,6 +6,8 @@ NoScriptWeb is a new type of lightweight, high-performance web browser that is *
 
 This software is written in the [Nim](https://nim-lang.org) programming language.
 
+> Note: this software does not currently exist.  I have too many projects already, such as the 3D Lua-programmable libretro emulator I am supposed to be working on right now.
+
 ## Ad-free
 
 It is impossible for ads from the traditional web to display in NoScriptWeb, or for companies to track you -- because no content or links from the traditional web can be displayed by NoScriptWeb browsers.
