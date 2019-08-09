@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This example shows the basic use of the NiGui toolkit.
 
 import nigui
