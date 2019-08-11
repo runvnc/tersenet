@@ -1,8 +1,12 @@
-import nigui
-
-import doc
+import nigui, packages/docutils/rstast, doc
 
 app.init()
+
+var rst = readFile("notworking.rst")
+
+var root = parse(rst)
+
+#echo renderRstToJson(root)
 
 var window = newWindow("NoScript Web")
 
@@ -11,30 +15,40 @@ window.height = 400.scaleToDpi
 
 # icon path executable file without extension + ".png"
 
-var mainContainer = newLayoutContainer(Layout_Vertical)
-window.add(mainContainer)
-
-var topContainer = newLayoutContainer(Layout_Vertical)
-mainContainer.add(topContainer)
-
-for i in 1..5:
-  topContainer.add(newLabel("Label in topContainer #" & $i))
-
 var scrollContainer = newLayoutContainer(Layout_Vertical)
-mainContainer.add(scrollContainer)
-scrollContainer.heightMode = HeightMode_Expand
-scrollContainer.widthMode = WidthMode_Expand
+window.add(scrollContainer)
 
-for i in 1..25:
-  scrollContainer.add(newLabel("Label in scrollContainer #" & $i)
+var control1 = newControl()
+scrollContainer.widthMode = WidthMode_Expand
+scrollContainer.heightMode = HeightMode_Expand
+# Let it fill out the whole window
+scrollContainer.add(control1)
+# Creates a drawable control
+
+control1.height = 700
+control1.width = 600
+control1.widthMode = WidthMode_Expand
+control1.heightMode = HeightMode_Static
+
+var gotCanvas = false
+
+control1.onDraw = proc (event: DrawEvent) =
+  let canvas = event.control.canvas
+  if not gotCanvas:
+    canvas.textColor = rgb(0, 0, 0)
+    canvas.fontSize = 20
+    canvas.fontFamily = "Arial"
+   
+    canvas.areaColor = rgb(250, 250, 250)
+    canvas.fill()
+    gotCanvas = true
+
+  render(canvas, root)
+  if control1.height != pageHeight:
+    control1.height = pageHeight
 
 window.show()
 
-var root = parse"""
-Heading 1
-=========
-Testing.
-"""
 
 app.run()
 # "app.quit()".

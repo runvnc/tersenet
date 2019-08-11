@@ -2,11 +2,17 @@
 
 For some context, read  [Adblocking, How about Nah?](https://www.eff.org/deeplinks/2019/07/adblocking-how-about-nah)
 
-NoScriptWeb is a new type of lightweight, high-performance web browser that is *100% JavaScript free*. Pages are encoded in an encrypted, size-limited subset of markdown distributed in a content-oriented (rather than server-centric) fashion. They load almost instantly from network peers.
+# Work in Progress (just started)
+
+*Note: What this actually does so far* Right now (after two days of actual coding) it is sort of like a janky RST viewer that only knows about headings and paragraphs.  Not useable for anything.
+
+I have also done some research into `dat`, `ipfs`, `gnunet` and `libp2p`.  Planning on using `libp2p` because of issues (such as poor performance for this task or installation problems) with the other options.
+
+# Everything below here is just am idea -- not actually coded yet
+
+NoScriptWeb is a new type of lightweight, high-performance document/wasm browser that is *100% JavaScript free*. Pages are encoded in an encrypted, size-limited subset of restructuredtext distributed in a content-oriented (rather than server-centric) fashion. They load almost instantly from network peers.
 
 This software is written in the [Nim](https://nim-lang.org) programming language.
-
-> Note: this software does not currently exist.  I have too many projects already, such as the 3D Lua-programmable libretro emulator I am supposed to be working on right now.
 
 ## Ad-free
 
@@ -14,11 +20,11 @@ It is impossible for ads from the traditional web to display in NoScriptWeb, or 
 
 This web browser is a relatively simple system, rather than an entire operating system-in-a-box like Chrome or Firefox. It is supported by decentralized protocols.
  
- ## Markdown subset
+## RST (restructured text) subset
  
-NoScriptWeb Markdown supports the following features: headings (with `#`), escape with backtick, bold, italics, bullets, and links (only to other NoScriptWeb pages, e.g. nsw://reports.frontline/aug2019austin).
+NoScriptWeb RST supports the following features: headings (with `#`), escape with backtick, bold, italics, bullets, and links (only to other NoScriptWeb pages, e.g. nsw://reports.frontline/aug2019austin).
  
- ## Attachments
+## Attachments
  
 All non-markdown content (except for one small image) is loaded *only* upon demand by the user.
  
