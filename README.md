@@ -8,7 +8,7 @@ For some context, read  [Adblocking, How about Nah?](https://www.eff.org/deeplin
 
 I have also done some research into `dat`, `ipfs`, `gnunet` and `libp2p`.  Planning on using `libp2p` because of issues (such as poor performance for this task or installation problems) with the other options.
 
-# Everything below here is just am idea -- not actually coded yet
+# Everything below here is just an idea -- not actually coded yet
 
 NoScriptWeb is a new type of lightweight, high-performance document/wasm browser that is *100% JavaScript free*. Pages are encoded in an encrypted, size-limited subset of restructuredtext distributed in a content-oriented (rather than server-centric) fashion. They load almost instantly from network peers.
 
