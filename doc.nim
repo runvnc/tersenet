@@ -18,6 +18,9 @@ var lineWidth = 0
 var textRun = false
 var words: seq[string] = @[]
 var level = 3
+var scrollY = 0
+var controlHeight = 500
+var firstPass = true
 
 proc parse*(rst:string): PRstNode =
   var opts = {roSupportSmilies}
@@ -42,6 +45,12 @@ proc splitLines(canvas: Canvas) : seq[string] =
   lineWidth = textWidth
   return lines    
 
+proc inView():bool =
+  let startY = scrollY
+  let endY = scrollY + controlHeight
+  #echo startY, ",", endY, ", ", scrollY
+  result = (y >= startY and y <= endY)
+
 proc renderLeaf(canvas: Canvas) =
   if x > pageWidth:
     x = spaceWidth
@@ -50,8 +59,9 @@ proc renderLeaf(canvas: Canvas) =
   var lines = splitLines(canvas)
   for line in lines:
     canvas.fontSize = size[level-1]
-    canvas.drawText(line, x, y)
-    drawTextCalls += 1
+    if inView():
+      canvas.drawText(line, x, y)
+      drawTextCalls += 1
     if len(lines) != 1:
       y += textHeight
       #x = floor(textWidth.toFloat * wScale).toInt
@@ -91,6 +101,7 @@ proc renderUnknown(canvas: Canvas, node: PRstNode) =
   lastUnknown = true
 
 proc renderNode(canvas: Canvas, node: PRstNode) =
+  if firstPass and not inView(): return
   if node == nil: return
   #echo node.kind
   var dummy = 0
@@ -116,25 +127,25 @@ proc renderNode(canvas: Canvas, node: PRstNode) =
   for son in node.sons:
     renderNode(canvas, son)
 
-proc render*(canvas: Canvas, root: PRstNode) =
+proc render*(canvas: Canvas, root: PRstNode, scrollPos:int) =
   x = 0
   y = 0
+  scrollY = scrollPos
   var n = 0
   textRun = false
   words = newSeq[string]()
   level = 3
 
   drawTextCalls = 0
-  canvas.textColor = rgb(0, 0, 0)
-  canvas.fontSize = 20
-  canvas.fontFamily = "Arial"
- 
+
   let time = cpuTime()
   for son in root.sons:
     n += 1
     renderNode(canvas, son)
 
-  if pageHeight != y:
+  if pageHeight < y:
     pageHeight = y + 100
   echo "render in ",(cpuTime()-time)*1000.0
   echo "total drawText calls: ",drawTextCalls
+  firstPass = false
+  

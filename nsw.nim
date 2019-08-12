@@ -32,8 +32,17 @@ control1.heightMode = HeightMode_Static
 
 #control1.height = pageHeight
 
+var initialized = false
+
+
 control1.onDraw = proc (event: DrawEvent) =
-  render(event.control.canvas, root)
+  if not initialized:
+    control1.canvas.textColor = rgb(0, 0, 0)
+    control1.canvas.fontSize = 20
+    control1.canvas.fontFamily = "Arial"
+    initialized = true
+
+  render(event.control.canvas, root, scrollContainer.yScrollPos())
   if control1.height != pageHeight:
     echo "fix height"
     control1.height = pageHeight
