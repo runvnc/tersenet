@@ -26,7 +26,7 @@ TerseNet functionality is separated into three types of browsers:
 
 1. Info browsers, for distributing text and very lightweight diagrams,
 2. Media Applications browsers, which run web assembly applications that can optionally be used to display or interact with media from TerseNet sites,
-3. Extended Media Applications browsers, web applications that support various extensions via a type of device driver API.
+3. Extended Media Applications browsers, handling web assembly applications that support various extensions via a type of device driver API.
 
 There should be multiple implementations of each type of browser. To make this practical, the required functionality is kept as sparse as possible while still remaining as flexible as necessary for each type of functionality.
 
