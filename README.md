@@ -20,7 +20,7 @@ It is impossible for ads from the traditional web to display in NoScriptWeb, or 
 
 This web browser is a relatively simple system, rather than an entire operating system-in-a-box like Chrome or Firefox. It is supported by decentralized protocols.
  
-# Multiple Browser Types with Standardized Integration
+# Multiple Browser Types with a Simple Standard for Integration Between Them
 
 TerseNet functionality is separated into three types of browsers:
 
