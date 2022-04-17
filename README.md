@@ -10,7 +10,7 @@ I have also done some research, such as `dat`, `ipfs`, `gnunet` and `libp2p`, we
 
 # Everything below here is just an idea -- not actually coded yet
 
-TerseNet is a new type of lightweight, high-performance document, media and application browser suite that is *100% JavaScript free*. Pages are encoded in an encrypted, size-limited subset of restructuredtext distributed in a content-oriented (rather than server-centric) fashion. They load almost instantly from network peers.
+TerseNet is a new type of lightweight, high-performance document, media and application browser suite that is *100% JavaScript free*. Pages are encoded in stricly size-limited subset of restructuredtext distributed in a content-oriented (rather than server-centric) fashion. They load almost instantly from network peers.
 
 This software prototype is written in the [Nim](https://nim-lang.org) programming language. One of the primary goals is for it to be feasible for individuals or small teams to implement some or all types of TerseNet browsers, so there should be multiple clients available, and large companies cannot control the platform, as is the case with browsers essentially incorporating a full bloated operating system that can only be implemented by large teams over the course of years.
 
