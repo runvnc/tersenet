@@ -16,7 +16,7 @@ This software prototype is written in the [Nim](https://nim-lang.org) programmin
 
 ## Ad-free
 
-It is impossible for ads from the traditional web to display in NoScriptWeb, or for companies to track you -- because no content or links from the traditional web can be displayed by NoScriptWeb browsers.
+It is impossible for ads from the traditional web to display in NoScriptWeb, or for companies to track you -- because no content or links from the traditional web can be displayed by TerseNet browsers.
 
 This web browser is a relatively simple system, rather than an entire operating system-in-a-box like Chrome or Firefox. It is supported by decentralized protocols.
  
@@ -43,7 +43,7 @@ TerseNet Info RST supports the following features: headings (with `#`), escape w
  
 ## Attachments
  
-All non-markdown content (except for one small image) is loaded *only* upon demand by the user.
+All non-RST content (except for one small image) is loaded *only* upon demand by the user.
  
 Media and applications can be attached to pages, but have restrictions.  No more than 10KB of images will be loaded by default.
 
