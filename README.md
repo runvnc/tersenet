@@ -1,18 +1,18 @@
-# NoScriptWeb
+# TerseNet
 
 For some context, read  [Adblocking, How about Nah?](https://www.eff.org/deeplinks/2019/07/adblocking-how-about-nah)
 
-# Work in Progress (just started)
+# Work in Progress
 
 *Note: What this actually does so far* Right now (after two days of actual coding) it is sort of like a janky RST viewer that only knows about headings and paragraphs.  Not useable for anything.
 
-I have also done some research into `dat`, `ipfs`, `gnunet` and `libp2p`.  Planning on using `libp2p` because of issues (such as poor performance for this task or installation problems) with the other options.
+I have also done some research, such as `dat`, `ipfs`, `gnunet` and `libp2p`, web assembly, etc. `ipfs` seems to be performing better now at retrieving content than it did a few years ago.
 
 # Everything below here is just an idea -- not actually coded yet
 
-NoScriptWeb is a new type of lightweight, high-performance document/wasm browser that is *100% JavaScript free*. Pages are encoded in an encrypted, size-limited subset of restructuredtext distributed in a content-oriented (rather than server-centric) fashion. They load almost instantly from network peers.
+TerseNet is a new type of lightweight, high-performance document, media and application browser suite that is *100% JavaScript free*. Pages are encoded in an encrypted, size-limited subset of restructuredtext distributed in a content-oriented (rather than server-centric) fashion. They load almost instantly from network peers.
 
-This software is written in the [Nim](https://nim-lang.org) programming language.
+This software prototype is written in the [Nim](https://nim-lang.org) programming language. One of the primary goals is for it to be feasible for individuals or small teams to implement some or all types of TerseNet browsers, so there should be multiple clients available.
 
 ## Ad-free
 
@@ -20,9 +20,18 @@ It is impossible for ads from the traditional web to display in NoScriptWeb, or 
 
 This web browser is a relatively simple system, rather than an entire operating system-in-a-box like Chrome or Firefox. It is supported by decentralized protocols.
  
-## RST (restructured text) subset
+# Multiple Browser Types with Standardized Integration
+
+## TerseNet Info
+
+### RST (restructured text) subset
  
-NoScriptWeb RST supports the following features: headings (with `#`), escape with backtick, bold, italics, bullets, and links (only to other NoScriptWeb pages, e.g. nsw://reports.frontline/aug2019austin).
+TerseNet Info RST supports the following features: headings (with `#`), escape with backtick, bold, italics, bullets, and links (only to other TerseNet info pages, e.g. terse://reports.frontline/aug2019austin).
+
+## TerseNet Media Applications
+
+## TerseNet Extended Applications
+ 
  
 ## Attachments
  
