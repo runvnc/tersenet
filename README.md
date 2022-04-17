@@ -30,11 +30,15 @@ TerseNet functionality is separated into three types of browsers:
 
 There should be multiple implementations of each type of browser. To make this practical, the required functionality is kept as sparse as possible while still remaining as flexible as necessary for each type of functionality.
 
-## TerseNet Info
+## TerseNet Info Pages
 
 ### RST (restructured text) subset
  
-TerseNet Info RST supports the following features: headings (with `#`), escape with backtick, bold, italics, bullets, and links (only to other TerseNet info pages, e.g. terse://reports.frontline/aug2019austin).
+TerseNet Info RST supports the following features: headings (with `#`), escape with backtick, bold, italics, bullets, and links (only to other TerseNet info pages, e.g. terse://reports.frontline/aug2019austin). Pages may also incoroporate IconVG files in between text paragraphs.
+
+Each page may be a maximum of 5KiB of text and/or IconVG data when uncompressed, with an additional optional 1KiB of attachment listings.
+
+
 
 ## TerseNet Media Applications
 
