@@ -16,7 +16,7 @@ This software prototype is written in the [Nim](https://nim-lang.org) programmin
 
 ## Ad-free
 
-It is impossible for ads from the traditional web to display in NoScriptWeb, or for companies to track you -- because no content or links from the traditional web can be displayed by TerseNet browsers.
+It is impossible for ads from the traditional web to display in TerseNet, or for companies to track you -- because no content or links from the traditional web can be displayed by TerseNet browsers.
 
 This web browser is a relatively simple system, rather than an entire operating system-in-a-box like Chrome or Firefox. It is supported by decentralized protocols.
  
@@ -55,7 +55,7 @@ Other than that small image, media must be launched explicitly from the Media ta
 
 ### Media attachments
 
-Pages may attach images or videos.  Their descriptions appear on the Media Tab.  Users must switch tabs and click the individual media item before any loading or processing is done.  Images and media may not be loaded from traditional web sources outside of NoScriptWeb  protocols.
+Pages may attach images or videos.  Their descriptions appear on the Media Tab.  Users must switch tabs and click the individual media item before any loading or processing is done.  Images and media may not be loaded from traditional web sources outside of TerseNet  protocols.
 
 ### Application attachments
 
@@ -65,7 +65,7 @@ Attached applications are written in web assembly with some basic I/O abilities 
 
 * A [simple UI API](https://github.com/simple2d/simple2d)
 
-* A communications API that connects applications with NoScriptWeb's p2p backbone
+* A communications API that connects applications with TerseNet's p2p backbone
 
 * Carefully controlled payment prompts that integrate popular cryptocurrencies.  Available cryptocurrencies currently include: Bitcoin, Ethereum, and Bitcoin Cash.
 
